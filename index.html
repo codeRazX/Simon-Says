@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Simon Game</h1>
+    </header>
+    <div class="board">
+        <div class="pulser-red desactived" data-value="0" data-audio="https://cdn.freecodecamp.org/curriculum/take-home-projects/simonSound1.mp3"></div>
+        <div class="pulser-blue desactived" data-value="1" data-audio="https://cdn.freecodecamp.org/curriculum/take-home-projects/simonSound2.mp3"></div>
+        <div class="pulser-green desactived" data-value="2" data-audio="https://cdn.freecodecamp.org/curriculum/take-home-projects/simonSound3.mp3"></div>
+        <div class="pulser-yellow desactived" data-value="3" data-audio="https://cdn.freecodecamp.org/curriculum/take-home-projects/simonSound4.mp3"></div>
+
+        <div class="board-center">
+            <h2>Simon<span>R</span></h2>
+            <div class="group-btn">
+                <div class="btn-block">
+                    <span class="count desactived" id="count">--</span>
+                    <p class="label label-count">Count</p>
+                </div>
+
+                <div class="btn-block">
+                    <div class="start" id="start"></div>
+                    <p class="label">Start</p>
+                </div>
+
+                <div class="btn-block">
+                    <div class="strict" id="strict">
+                        <div class="actived-strict"></div>
+                    </div>
+                    <p class="label">Strict</p>
+                </div> 
+            </div>
+            <div class="toggle-start" id="toggle">
+                <div class="toggle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
